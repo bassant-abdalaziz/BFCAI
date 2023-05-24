@@ -1,0 +1,137 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* start header */
+.header {
+    margin-top: 150px;
+}
+
+.header .special-heading {
+    text-transform: capitalize;
+    text-align: center;
+    color: #0c3f77;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.header .special-heading span {
+    border-bottom: 5px solid #0fa4ee
+}
+
+@media (max-width:767px) {
+    .header .special-heading {
+        font-size: 25px;
+    }
+
+}
+
+/* end header */
+
+/* start form */
+.form-group {
+    margin-top: 70px;
+    padding: 60px 0;
+    background-color: #f6f6f6;
+}
+
+.form-group h4 {
+    font-size: 30px;
+    line-height: 1.2;
+    color: #001751;
+    margin-bottom: 50px;
+}
+
+@media (max-width:420px) {
+
+    .form-group h4 {
+        font-size: 19px;
+    }
+}
+
+.form-group form {
+    display: grid;
+    grid-template-columns: 50% 40%;
+}
+
+@media (max-width:991px) {
+
+    .form-group form {
+        grid-template-columns: repeat(1, auto)
+    }
+}
+
+.form-group input,
+.form-group textarea {
+    outline: none;
+    margin-bottom: 30px;
+    background-color: #ffffff;
+    border: 2px solid rgb(202, 202, 202);
+    border-radius: 5px;
+}
+
+.form-group input {
+    padding: 0 20px;
+    width: 92%;
+    height: 55px;
+}
+
+.form-group textarea {
+    padding: 20px;
+    width: 100%;
+    height: 80%;
+}
+
+
+@media (max-width:991px) {
+
+    .form-group input {
+        width: 100%;
+    }
+}
+
+
+.form-group form input[type="submit"] {
+    outline: none;
+    background-color: #1a83a4;
+    border-radius: 4px;
+    color: whitesmoke;
+    border: 2px solid #1a83a4;
+    width: fit-content;
+    height: 50px;
+    font-size: 18px;
+    transition: 0.9s;
+}
+
+.form-group form input[type="submit"]:hover {
+    color: #001751;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+/* end form */
+
+/* contact us */
+.contact-us {
+    margin: 70px 0;
+}
+
+.contact-us .map h3 {
+    color: #001751;
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.contact-us .map p {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.contact-us .map iframe {
+    width: 100%;
+
+}
+
+/*End of Contact Us*/

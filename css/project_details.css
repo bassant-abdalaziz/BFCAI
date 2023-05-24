@@ -1,0 +1,114 @@
+/* start project details */
+.project_details {
+    margin-top: 70px;
+    padding: 60px 0;
+    margin-top: 100px;
+}
+
+.project_details .special-heading {
+    text-transform: capitalize;
+    line-height: 1.8;
+    color: #0c3f77;
+    font-size: 24px;
+    font-weight: 700;
+    border-bottom: medium double #cc5a00;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+@media (max-width:767px) {
+    .project_details .special-heading {
+        font-size: 18px;
+    }
+
+}
+
+.project_details h3 {
+    font-size: 18px;
+    color: #222324;
+}
+
+.project_details .project_details-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 50px;
+    margin-top: 15px;
+}
+
+.project_details .project_details-content .text p {
+    max-width: 100%;
+    line-height: 1.8;
+    font-size: 18px;
+    margin: 0;
+    color: rgb(59, 59, 59);
+}
+
+.project_details .project_details-content .info {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+}
+
+@media (max-width:430px) {
+    .project_details .project_details-content .info {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+
+}
+
+.project_details .project_details-content .info p {
+    text-transform: capitalize;
+    font-weight: 600;
+    font-size: 19px;
+    color: rgb(59, 59, 59);
+    margin-bottom: 30px;
+}
+
+.project_details .project_details-content .info p span {
+    font-weight: 400;
+    font-size: 17px;
+}
+
+.project_details .project_details-content .info a {
+    outline: none;
+    border: none;
+    background: none;
+    color: #fff;
+    background: #1a83a4;
+    border-radius: 4px;
+    font-size: 16px;
+    padding: 15px 25px 15px 25px;
+    transition: 0.4s;
+    font-weight: bold;
+}
+
+.project_details .project_details-content .info a:hover {
+    text-decoration: none;
+    background-color: #38b0d4;
+}
+
+/* table */
+#myTable {
+    width: 98%;
+    border-collapse: collapse;
+}
+
+@media (max-width:992px) {
+    #myTable {
+        margin-top: 30px;
+    }
+}
+
+#HeadRow {
+    background: #1a83a4;
+    color: white;
+    font-weight: bold;
+}
+
+#myTable td {
+    padding: 5px;
+    border: 2px solid rgb(201, 201, 201);
+    text-align: center;
+}
+
+/* end project-details */

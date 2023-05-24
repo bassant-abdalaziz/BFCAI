@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Files Of Css -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/projects.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="shortcut icon" href="images/logo.png">
+</head>
+
+<body>
+
+    <!-- Start header -->
+    <header>
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light ">
+                <a class="navbar-brand" href="home.html"><img src="images/logo.png" alt=""></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="home.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="projects.html">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="departments.html">Departments</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="news.html">News</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact_us.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- End header -->
+
+    <!-- End section of departments -->
+
+    <!-- Start projects -->
+    <div class="projects">
+        <div class="container">
+            <h2 class="special-heading"> <span>Our projects </span></h2>
+            <!-- Start form of search -->
+            <form action="">
+                <input type="search" name="" placeholder="Search by project name">
+                <input type="submit" value="Search">
+            </form>
+            <!-- end form of search -->
+            <div class="row content-project">
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class=" bg-dark"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1" class=" bg-secondary"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <!-- Start row 1 of departments -->
+                        <div class="carousel-item active">
+                            <div class="row departments">
+                                <!-- department cs -->
+                                <div class="col-sm-12 col-md-6 col-lg-4 department">
+                                    <div class="card">
+                                        <div class="img"><img src="images/cs.jpg" alt=""></div>
+                                        <div class="card-body">
+                                            <h3>Computer Science</h3>
+                                            <button class="btn" onclick="myFunction()">Show</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End department cs -->
+
+                                <!-- department sc -->
+                                <div class="col-sm-12 col-md-6 col-lg-4 department">
+                                    <div class="card">
+                                        <div class="img"><img src="images/sc.jpg" alt=""></div>
+                                        <div class="card-body">
+                                            <h3>Scientific Computing</h3>
+                                            <button class="btn" onclick="myFunction()">Show</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End department sc -->
+
+                                <!-- department IS -->
+                                <div class="col-sm-12 col-md-6 col-lg-4 department">
+                                    <div class="card">
+                                        <div class="img"><img src="images/is.jpg" alt=""></div>
+                                        <div class="card-body">
+                                            <h3>Information System</h3>
+                                            <button class="btn" onclick="myFunction()">Show</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End department IS -->
+                            </div>
+                        </div>
+                        <!-- End row 1 of departments -->
+
+                        <!-- Start row 2 of departments -->
+                        <div class="carousel-item">
+                            <div class="row departments">
+                                <!-- department MI -->
+                                <div class="col-sm-12 col-md-6 col-lg-4 department">
+                                    <div class="card">
+                                        <div class="img"><img src="images/mi.jpg" alt=""></div>
+                                        <div class="card-body">
+                                            <h3>Medical Informatics</h3>
+                                            <button class="btn" onclick="myFunction()">Show</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End department MI -->
+
+                                <!-- department AI -->
+                                <div class="col-sm-12 col-md-6 col-lg-4 department">
+                                    <div class="card">
+                                        <div class="img"><img src="images/ai.jpg" alt=""></div>
+                                        <div class="card-body">
+                                            <h3>Artificial Intelligence</h3>
+                                            <button class="btn" onclick="myFunction()">Show</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End department AI -->
+
+                                <!-- department Security -->
+                                <div class="col-sm-12 col-md-6 col-lg-4 department">
+                                    <div class="card">
+                                        <div class="img"><img src="images/security.jpg" alt=""></div>
+                                        <div class="card-body">
+                                            <h3>Security</h3>
+                                            <button class="btn" onclick="myFunction()">Show</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End department Security -->
+                            </div>
+                        </div>
+                        <!--End row 2 of departments-->
+                    </div>
+                </div>
+                <!-- Start filter projects -->
+                <div class="container">
+                    <div class=" filter responsive-table" id="myDIV">
+                        <!-- Start select box -->
+                        <div class="optionsDiv">
+                            <select id="selectField">
+                                <option value="All" selected>All Projects</option>
+                                <option value="2022">2022</option>
+                                <option value="2021">2021</option>
+                                <option value="2020">2020</option>
+                            </select>
+                        </div>
+                        <!-- end select box -->
+
+                        <!-- Start Table -->
+                        <table id="myTable" class="table">
+                            <tr id="HeadRow">
+                                <td>Project Name</td>
+                                <td>Date</td>
+                                <td>Details</td>
+                            </tr>
+
+                            <tr position="2020">
+                                <td>hospital management system</td>
+                                <td>2020</td>
+                                <td><a href="project_details.html">view</a></td>
+                            </tr>
+
+                            <tr position="2021">
+                                <td>skin cancer detection</td>
+                                <td>2021</td>
+                                <td><a href="project_details.html">view</a></td>
+                            </tr>
+
+                            <tr position="2022">
+                                <td>E-Learning</td>
+                                <td>2022</td>
+                                <td><a href="project_details.html">view</a></td>
+                            </tr>
+                        </table>
+                        <!-- End Table -->
+                    </div>
+                </div>
+                <!-- End filter projects -->
+
+            </div>
+        </div>
+    </div>
+    <!-- End section of projects -->
+    <!-- Scroll -->
+    <span class="up"><i class="fas fa-arrow-circle-up"></i></span>
+    <!-- Start footer -->
+    <footer>
+        <div class="container">
+            <div class="social">
+                <h6 class="logo">BFCAI</h6>
+                <a href="https://www.facebook.com/Official.BFCAI" target="_blank">
+                    <i class="fab fa-facebook-square "></i></a>
+                <a href="https://www.youtube.com/channel/UCuyfY61mUyWK30ybXKqzJ3g" target="_blank"> <i
+                        class="fab fa-youtube "></i></a>
+                <a href="https://twitter.com/bfciitunit" target="_blank"> <i class="fab fa-twitter "></i></a>
+            </div>
+            <div class="contact">
+                <h6>Contact Us</h6>
+                <p><i class="fas fa-map-marker-alt"></i>New Benha - Benha - Qalyubia</p>
+                <p><i class="fas fa-envelope"></i> 13518</p>
+                <p><i class="fas fa-phone-alt"></i> 013-3229371</p>
+            </div>
+            <div class="links">
+                <h6>Links</h6>
+                <a href="https://bu.edu.eg/en//" target="_blank">Benha University</a>
+                <a href="https://www.ekb.eg/" target="_blank">Egyptian Knowledge Bank</a>
+            </div>
+        </div>
+        <div class="end-footer">
+            <p>© All rights reserved to Bfcai 2022</p>
+        </div>
+    </footer>
+    <!-- End  footer -->
+    <!-- Files Of Js -->
+    <script src="js/index.js"></script>
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/projects.js"></script>
+</body>
+
+</html>

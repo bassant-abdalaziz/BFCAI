@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/AdminDashboard.css">
+    <link rel="stylesheet" href="../css/all.min.css">
+    <title>Admin Projects</title>
+</head>
+
+<body>
+    <!--------------------------- Start sidebar --------------------------->
+    <div class="side-menu">
+        <div class="brand-name">
+            <h1>bfcai</h1>
+        </div>
+        <ul>
+            <li><a href="adminDashboard.html"><i class="fas fa-home"></i> <span>dashboard</span></a></li>
+            <li><a href="adminNews.html"><i class="fas fa-newspaper"></i> <span>news</span></a></li>
+            <li class="active"><a href="adminProjects.html"><i class="far fa-file-alt"></i></i>
+                    <span>projects</span></a></li>
+            <li><a href="adminTeams.html"><i class="fas fa-user-graduate"></i> <span>teams</span></a> </li>
+            <li><a href="adminGrades.html"><i class="fas fa-graduation-cap"></i> <span>grades</span></a></li>
+            <li><a href="adminCommittee.html"><i class="fas fa-comment"></i> <span>committee</span></a> </li>
+            <li><a href="adminDoctors.html"><i class="fas fa-comment"></i> <span>doctors</span></a> </li>
+            <li><a href="contactUs.html"><i class="fas fa-mobile"></i> <span>contact us</span></a> </li>
+        </ul>
+    </div>
+    <!--------------------------- End sidebar --------------------------->
+
+    <!--------------------------- Start main content --------------------------->
+    <div class="box-container">
+        <!-- Start header -->
+        <div class="header">
+            <div class="nav">
+                <form class="search">
+                    <input type="text" placeholder="Search..">
+                    <button type="submit"><i class="fas fa-search-plus"></i></button>
+                </form>
+            </div>
+        </div>
+        <!-- End header -->
+
+        <div class="main-container">
+            <!-- Start modals -->
+            <!-- start add form Modal -->
+            <div class="modal fade" id="exampleformModal" tabindex="-1" role="dialog"
+                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Add Project</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <!-- Start Form -->
+                            <form>
+
+                                <div class="form-group">
+                                    <label for="project-id" class="col-form-label">Project ID</label>
+                                    <select class="form-control" id="project-id">
+                                        <option value="" selected>choose ID</option>
+                                        <option value="">1</option>
+                                        <option value="">2</option>
+                                        <option value="">3</option>
+                                        <option value="">4</option>
+                                        <option value="">5</option>
+                                        <option value="">6</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="name" class="col-form-label">Project Name</label>
+                                    <input type="text" class="form-control" id="name" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="department" class="col-form-label">Department</label>
+                                    <select class="form-control" id="department">
+                                        <option value="" selected>choose department</option>
+                                        <option value="">MI</option>
+                                        <option value="">CS</option>
+                                        <option value="">SC</option>
+                                        <option value="">IS</option>
+                                        <option value="">AI</option>
+                                        <option value="">Security</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="number" class="col-form-label">Team Number</label>
+                                    <input type="number" class="form-control" id="number" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="message-text" class="col-form-label">Details:</label>
+                                    <textarea class="form-control" id="message-text"></textarea>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="doctor" class="col-form-label">Doctor</label>
+                                    <input type="text" class="form-control" id="doctor" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="assistant" class="col-form-label">Assistant</label>
+                                    <input type="text" class="form-control" id="assistant" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="leader" class="col-form-label">Team Leader</label>
+                                    <input type="text" class="form-control" id="leader" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="leader_mail" class="col-form-label">Email</label>
+                                    <input type="email" class="form-control" id="leader-mail" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="leader_pass" class="col-form-label">Password</label>
+                                    <input type="password" class="form-control" id="leader-pass" required>
+                                </div>
+                            </form>
+                            <!-- End Form -->
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Add</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end add form modal -->
+
+            <!-- start edit form Modal -->
+            <div class="modal fade" id="exampleeditModal" tabindex="-1" role="dialog"
+                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Edit Project</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <!-- Start Form -->
+                            <form>
+                                <div class="form-group">
+                                    <label for="name" class="col-form-label">Project Name</label>
+                                    <input type="text" class="form-control" id="name" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="department" class="col-form-label">Department</label>
+                                    <select class="form-control" id="department">
+                                        <option value="" selected>choose department</option>
+                                        <option value="">MI</option>
+                                        <option value="">CS</option>
+                                        <option value="">SC</option>
+                                        <option value="">IS</option>
+                                        <option value="">AI</option>
+                                        <option value="">Security</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="number" class="col-form-label">Team Number</label>
+                                    <input type="number" class="form-control" id="number" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="message-text" class="col-form-label">Details:</label>
+                                    <textarea class="form-control" id="message-text"></textarea>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="doctor" class="col-form-label">Doctor</label>
+                                    <input type="text" class="form-control" id="doctor" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="assistant" class="col-form-label">Assistant</label>
+                                    <input type="text" class="form-control" id="assistant" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="leader" class="col-form-label">Team Leader</label>
+                                    <input type="text" class="form-control" id="leader" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="leader_mail" class="col-form-label">Email</label>
+                                    <input type="email" class="form-control" id="leader-mail" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="leader_pass" class="col-form-label">Password</label>
+                                    <input type="password" class="form-control" id="leader-pass" required>
+                                </div>
+                            </form>
+                            <!-- End Form -->
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Edit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end edit form modal -->
+
+            <!-- start delete form Modal -->
+            <div class="modal fade" id="exampledeleteModal" tabindex="-1" role="dialog"
+                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Delete Project</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Delete</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end delete form Modal -->
+
+            <!-- end Modals -->
+
+            <!-- Start add button Modal -->
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleformModal">
+                Add Project
+            </button>
+            <!-- End add button Modal -->
+
+            <!-- Start Table -->
+            <div class="responsive-table">
+                <table class="table" style=" min-width: 2100px;">
+                    <!-- Start table head -->
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Department</th>
+                            <th>Team Number</th>
+                            <th>Doctor</th>
+                            <th>Assistant</th>
+                            <th>Leader</th>
+                            <th>Email</th>
+                            <th>action</th>
+                        </tr>
+                    </thead>
+                    <!-- End table head -->
+
+                    <!-- Start table body -->
+                    <tbody>
+                        <!-- Start tr of table -->
+                        <tr>
+                            <td style="width: 5%">3</td>
+                            <td style="width: 20%">skin cancer detection by using technique of machine learning and deep
+                                leaning</td>
+                            <td>medical informatics</td>
+                            <td style="width: 10%">13</td>
+                            <td>ahmed alaa elsayed</td>
+                            <td>ahmed alaa elsayed</td>
+                            <td>ali alaa elsayed</td>
+                            <td>ali@1235</td>
+                            <td style="width: 18%">
+                                <button type="button" class="btn btn-dark" data-toggle="modal"
+                                    data-target="#exampleeditModal">
+                                    <i class="fas fa-edit"></i>
+                                </button>
+                                <button type="button" class="btn btn-danger" data-toggle="modal"
+                                    data-target="#exampledeleteModal">
+                                    <i class="fas fa-trash"></i>
+                                </button>
+                            </td>
+                        </tr>
+                        <!-- End tr of table -->
+
+                    </tbody>
+                    <!-- End table body -->
+                </table>
+            </div>
+            <!-- end table -->
+        </div>
+    </div>
+    <!--------------------------- End main content --------------------------->
+
+
+    <script src="../js/jquery-3.6.1.min.js"></script>
+    <script src="../js/bootstrap.js"></script>
+</body>
+
+</html>

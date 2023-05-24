@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <!-- Files Of Css -->
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/all.min.css">
+    <link rel="stylesheet" href="../css/doctor-dashboardProfile.css">
+    <link rel="stylesheet" href="../css/doctor-dashboardMain.css">
+    <link rel="shortcut icon" href="../images/logo.png">
+</head>
+
+<body>
+
+    <!-- Start header -->
+    <header>
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light ">
+                <a class="navbar-brand" href="../home.html"><img src="../images/logo.png" alt=""></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class=" ml-auto">
+                        <li class="nav-item ">
+                            <a class="nav-link" href="../home.html" target="_blank">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../projects.html" target="_blank">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../departments.html" target="_blank">Departments</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../news.html" target="_blank">News</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../contact_us.html" target="_blank">Contact Us</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-chalkboard-teacher" style="font-size: 28px"></i>
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">ali123@fci.bu.edu.eg</a>
+                                <a class="dropdown-item" href="profile.html">profile</a>
+                                <a class="dropdown-item" href="#">log out</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- End header -->
+
+    <!-- Start edit profile -->
+    <div class="profile">
+        <div class="container">
+            <div class="box">
+                <div class="profile-pic">
+                    <img src="../images/mphoto.jpg">
+                    <input type="file" id="file" name="image">
+                    <label for="file"><i class="fas fa-camera "></i></label>
+                </div>
+                <input type="text" placeholder="Enter Your Name " name="">
+                <select name="department">
+                    <option value="" selected>Select Department</option>
+                    <option value="">CS</option>
+                    <option value="">SC</option>
+                    <option value="">IS</option>
+                    <option value="">AI</option>
+                </select>
+                <input type="password" placeholder="Current Password" name="">
+                <input type="password" placeholder="New Password" name="">
+                <input type="submit" value="save changes">
+            </div>
+        </div>
+    </div>
+    <!-- End edit profile -->
+
+    <!-- Scroll -->
+    <span class="up"><i class="fas fa-arrow-circle-up"></i></span>
+    <!--end scroll -->
+
+    <!-- Start footer -->
+    <footer>
+        <div class="container">
+            <div class="social">
+                <h6 class="logo">BFCAI</h6>
+                <a href="https://www.facebook.com/Official.BFCAI" target="_blank">
+                    <i class="fab fa-facebook-square "></i></a>
+                <a href="https://www.youtube.com/channel/UCuyfY61mUyWK30ybXKqzJ3g" target="_blank"> <i
+                        class="fab fa-youtube "></i></a>
+                <a href="https://twitter.com/bfciitunit" target="_blank"> <i class="fab fa-twitter "></i></a>
+            </div>
+            <div class="contact">
+                <h6>Contact Us</h6>
+                <p><i class="fas fa-map-marker-alt"></i>New Benha - Benha - Qalyubia</p>
+                <p><i class="fas fa-envelope"></i> 13518</p>
+                <p><i class="fas fa-phone-alt"></i> 013-3229371</p>
+            </div>
+            <div class="links">
+                <h6>Links</h6>
+                <a href="https://bu.edu.eg/en//" target="_blank">Benha University</a>
+                <a href="https://www.ekb.eg/" target="_blank">Egyptian Knowledge Bank</a>
+            </div>
+        </div>
+        <div class="end-footer">
+            <p>© All rights reserved to Bfcai 2022</p>
+        </div>
+    </footer>
+    <!-- End  footer -->
+    <!-- Files Of Js -->
+    <script src="../js/index.js"></script>
+    <script src="../js/jquery-3.6.1.min.js"></script>
+    <script src="../js/bootstrap.js"></script>
+</body>
+
+</html>

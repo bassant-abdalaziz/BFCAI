@@ -1,0 +1,39 @@
+/*Start variables*/
+:root {
+    --main-color: #6caeba;
+    --section-color: rgb(12 34 46);
+    --main-margin: 100px;
+    --section-margin: 40px;
+}
+
+/*End variables*/
+
+table {
+    margin-top: calc(var(--main-margin) + 100px);
+}
+
+.responsive-table {
+    overflow-x: auto;
+}
+
+.table {
+    min-width: 1000px;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+thead {
+    background: var(--main-color);
+    color: white;
+    text-transform: capitalize;
+}
+
+table td {
+    border: 1px solid #dee2e6;
+}
+
+table td a {
+    color: rgb(0, 145, 255)
+}
+
+/* End content */

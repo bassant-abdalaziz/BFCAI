@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up</title>
+  <!-- Files Of Css -->
+  <link rel="stylesheet" href="css/sign-up.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="shortcut icon" href="images/logo.png">
+</head>
+
+<body>
+  <!-- login form -->
+  <div class="container">
+    <div class="login-content">
+      <form action="">
+        <h2 class="title">Create An Account</h2>
+
+        <!-- Start First Name -->
+        <div class="input-div one">
+          <div class="i">
+            <i class="fas fa-user"></i>
+          </div>
+          <div class="div">
+            <h5>First Name</h5>
+            <input type="text" class="input" required>
+          </div>
+        </div>
+
+        <!-- Start Last Name -->
+        <div class="input-div one">
+          <div class="i">
+            <i class="fas fa-user"></i>
+          </div>
+          <div class="div">
+            <h5>Last Name</h5>
+            <input type="text" class="input" required>
+          </div>
+        </div>
+
+        <!-- Start Email -->
+        <div class="input-div one">
+          <div class="i">
+            <i class="fas fa-envelope"></i>
+          </div>
+          <div class="div">
+            <h5>Email</h5>
+            <input type="email" class="input" required>
+          </div>
+        </div>
+
+        <!-- Start department -->
+        <div class="input-div one select">
+          <div class="i">
+            <i class="fas fa-laptop"></i>
+          </div>
+          <div class="div">
+            <select name="department">
+              <option value="" selected>Select User Type</option>
+              <option value="">Doctor</option>
+              <option value="">Secretary</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Start Password -->
+        <div class="input-div pass">
+          <div class="i">
+            <i class="fas fa-lock"></i>
+          </div>
+          <div class="div">
+            <h5>Password</h5>
+            <input type="password" class="input" required>
+          </div>
+        </div>
+
+        <!-- Start confirm password -->
+        <div class="input-div pass">
+          <div class="i">
+            <i class="fas fa-lock"></i>
+          </div>
+          <div class="div">
+            <h5>Confirm Password</h5>
+            <input type="password" class="input" required>
+          </div>
+        </div>
+
+        <a href="login.html">Already have an account?</a>
+
+        <input type="submit" class="btn" value="Sign Up">
+      </form>
+
+      <div class="image">
+        <img src="images/staff.png" alt="login-staff">
+      </div>
+    </div>
+  </div>
+  <!-- End sign up form -->
+
+  <!-- js sign up -->
+  <script>
+    const inputs = document.querySelectorAll(".input");
+
+
+    function addcl() {
+      let parent = this.parentNode.parentNode;
+      parent.classList.add("focus");
+    }
+
+    function remcl() {
+      let parent = this.parentNode.parentNode;
+      if (this.value == "") {
+        parent.classList.remove("focus");
+      }
+    }
+
+
+    inputs.forEach(input => {
+      input.addEventListener("focus", addcl);
+      input.addEventListener("blur", remcl);
+    });
+  </script>
+  <!-- end js sign up -->
+</body>
+
+</html>

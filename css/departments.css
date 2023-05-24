@@ -1,0 +1,153 @@
+/* start staff of departments*/
+.staff-department {
+    margin-top: 70px;
+    padding: 60px 0;
+    margin-top: 100px;
+}
+
+.staff-department .special-heading {
+    text-transform: capitalize;
+    line-height: 1.8;
+    color: #0c3f77;
+    font-size: 24px;
+    font-weight: 700;
+    border-bottom: medium double #cc5a00;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.staff-department .staff-department-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 50px;
+    margin-top: 15px;
+}
+
+
+.staff-department .staff-department-content .text p {
+    width: 100%;
+    line-height: 1.8;
+    font-size: 18px;
+    margin: 0;
+    color: rgb(59, 59, 59);
+}
+
+/* end staff of departments */
+
+/* start form */
+
+.staff-department .staff-department-content form {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minMax(350px, 1fr));
+    gap: 20px;
+}
+
+@media (max-width:767px) {
+    .staff-department .staff-department-content form {
+        grid-template-columns: repeat(auto-fill, minMax(250px, 1fr));
+
+    }
+}
+
+#selectField {
+    border-radius: 5px;
+    border: 2px solid #ccc;
+    outline: none;
+    font-size: 16px;
+    height: 50px;
+    width: 90%;
+    padding: 5px;
+    color: rgb(118, 118, 118);
+    background-color: #fbfbfb;
+}
+
+.staff-department form input[type="submit"] {
+    outline: none;
+    background-color: #1a83a4;
+    border-radius: 4px;
+    color: whitesmoke;
+    border: 1px solid #1a83a4;
+    height: 50px;
+    width: 50%;
+    font-size: 18px;
+    transition: 0.9s;
+}
+
+.staff-department form input[type="submit"]:hover {
+    background-color: #50c2e5;
+    cursor: pointer;
+}
+
+/* end form */
+
+/* start doctor of departments*/
+.doctor-department {
+    padding: 20px 0;
+    margin-top: 10px;
+}
+
+.doctor-department .doctor-department-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minMax(250px, 1fr));
+    gap: 25px;
+}
+
+@media (max-width:767px) {
+    .doctor-department .doctor-department-content {
+        grid-template-columns: repeat(auto-fill, minMax(200px, 1fr));
+    }
+}
+
+.doctor-department .doctor-department-content .staff_card {
+
+    border: 1px solid rgb(155, 155, 155);
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+}
+
+.doctor-department .doctor-department-content .staff_card .image {
+    width: 100%;
+}
+
+.doctor-department .doctor-department-content .staff_card .image img {
+    width: 100%;
+    height: 250px;
+    border-radius: 10px;
+}
+
+
+.doctor-department .doctor-department-content .staff_card .info {
+    padding: 20px;
+}
+
+.doctor-department .doctor-department-content .staff_card .info h3 a {
+    color: rgb(58, 59, 59);
+    text-transform: capitalize;
+    font-size: 21px;
+}
+
+.doctor-department .doctor-department-content .staff_card .info h3 a:hover {
+    text-decoration: none;
+    color: rgb(70, 168, 210);
+}
+
+.doctor-department .doctor-department-content .staff_card .info h4 {
+    text-transform: capitalize;
+    font-weight: 600;
+    font-size: 20px;
+    color: rgb(111, 111, 111);
+    text-decoration: none;
+    padding: 10px 0;
+}
+
+@media (max-width:767px) {
+    .doctor-department .doctor-department-content .staff_card .info h3 a {
+        font-size: 16px;
+    }
+
+    .doctor-department .doctor-department-content .staff_card .info h4 {
+        font-size: 16px;
+    }
+}
+
+/* end staff of departments */

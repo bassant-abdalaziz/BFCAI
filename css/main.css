@@ -1,0 +1,196 @@
+/* Glabal Rules  */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* small */
+@media (min-width:768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+/* medium */
+@media (min-width:992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+/* large */
+@media (min-width:1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+/* End Global Rules */
+
+/* Start header */
+header {
+    background-color: white;
+    border-bottom: 1px solid #d6d6d6;
+    box-shadow: 1px 1px 1px #d6d6d6;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+}
+
+header a img {
+    width: 70px;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    padding-top: 15px;
+}
+
+@media (max-width:991px) {
+    .navbar ul {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+.navbar li a {
+    font-size: 20px;
+    color: rgb(121, 121, 121);
+    text-transform: capitalize;
+    padding: 0 25px;
+    transition: 0.5s;
+}
+
+.navbar li a.active {
+    color: #58d9f0;
+}
+
+.navbar li a:hover {
+    color: #58d9f0;
+}
+
+.navbar li.dropdown a {
+    font-size: 16px;
+}
+
+/* End header */
+
+/* Scroll */
+
+.up {
+    position: fixed;
+    bottom: 10px;
+    right: -45px;
+    background-color: #6caeba;
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+    padding: 5px 10px;
+    border-radius: 30%;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.up.show {
+    right: 20px;
+}
+
+/* end scroll */
+/* Start footer */
+
+footer {
+    background-color: rgb(12 34 46);
+    margin-top: 70px;
+    padding: 50px 0;
+}
+
+footer .container {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-gap: 60px;
+}
+
+@media screen and (max-width: 767px) {
+    footer .container {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+}
+
+footer .container .social .logo {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 40px;
+    letter-spacing: 1px;
+    margin: 0 0 8px 0;
+}
+
+footer .container .social a .fab {
+    padding: 4px;
+    font-size: 28px;
+}
+
+footer .container .social .fa-facebook-square {
+    color: #496bb2;
+}
+
+footer .container .social .fa-youtube {
+    color: #e90e11;
+}
+
+footer .container .social .fa-twitter {
+    color: #0999d6;
+}
+
+footer .container h6 {
+    color: white;
+    font-size: 23px;
+    margin-bottom: 20px;
+}
+
+footer .container .contact p {
+    color: rgb(198, 198, 198);
+    font-size: 18px;
+}
+
+footer .container .contact i {
+    padding: 0 6px;
+}
+
+footer .container .links a {
+    display: block;
+    text-decoration: none;
+    color: rgb(198, 198, 198);
+    font-size: 19px;
+    margin-top: 5px;
+    transition: 0.5s;
+}
+
+footer .container .links a:hover {
+    color: #16a0b9;
+}
+
+.end-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.end-footer p {
+    color: white;
+    font-size: 17px;
+    margin: 0;
+}
+
+/* end footer */

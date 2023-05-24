@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/AdminDashboard.css">
+    <link rel="stylesheet" href="../css/all.min.css">
+    <title>Doctors</title>
+</head>
+
+<body>
+    <!--------------------------- Start sidebar --------------------------->
+    <div class="side-menu">
+        <div class="brand-name">
+            <h1>bfcai</h1>
+        </div>
+        <ul>
+            <li><a href="adminDashboard.html"><i class="fas fa-home"></i> <span>dashboard</span></a></li>
+            <li><a href="adminNews.html"><i class="fas fa-newspaper"></i> <span>news</span></a></li>
+            <li><a href="adminProjects.html"><i class="far fa-file-alt"></i></i> <span>projects</span></a></li>
+            <li><a href="adminTeams.html"><i class="fas fa-user-graduate"></i> <span>teams</span></a> </li>
+            <li><a href="adminGrades.html"><i class="fas fa-graduation-cap"></i> <span>grades</span></a></li>
+            <li><a href="adminCommittee.html"><i class="fas fa-comment"></i> <span>committee</span></a> </li>
+            <li class="active"><a href="adminDoctors.html"><i class="fas fa-comment"></i> <span>doctors</span></a> </li>
+            <li><a href="contactUs.html"><i class="fas fa-mobile"></i> <span>contact us</span></a> </li>
+        </ul>
+    </div>
+    <!--------------------------- End sidebar --------------------------->
+
+    <!--------------------------- Start main content --------------------------->
+    <div class="box-container">
+        <!-- Start header -->
+        <div class="header">
+            <div class="nav">
+                <form class="search">
+                    <input type="text" placeholder="Search..">
+                    <button type="submit"><i class="fas fa-search-plus"></i></button>
+                </form>
+            </div>
+        </div>
+        <!-- End header -->
+
+        <div class="main-container">
+            <!-- Start modals -->
+
+            <!-- start delete form Modal -->
+            <div class="modal fade" id="exampledeleteModal" tabindex="-1" role="dialog"
+                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Delete Doctor</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Delete</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end delete form Modal -->
+
+            <!-- end Modals -->
+
+            <!-- Start Table -->
+            <div class="responsive-table">
+                <table class="table">
+                    <!-- Start table head -->
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Department</th>
+                            <th>status</th>
+                            <th>action</th>
+                        </tr>
+                    </thead>
+                    <!-- End table head -->
+
+                    <!-- Start table body -->
+                    <tbody>
+                        <!-- Start tr of table -->
+                        <tr>
+                            <td>ahmed alaa elsayed</td>
+                            <td>computer science</td>
+                            <td>
+                                <label for="status"></label>
+                                <input type="checkbox" id="status">
+                                active
+                            </td>
+                            <td>
+                                <button type="button" class="btn btn-danger" data-toggle="modal"
+                                    data-target="#exampledeleteModal">
+                                    <i class="fas fa-trash"></i>
+                                </button>
+                            </td>
+                        </tr>
+                        <!-- End tr of table -->
+
+                        <tr>
+                            <td>ahmed alaa elsayed</td>
+                            <td>computer science</td>
+                            <td>
+                                <label for="status"></label>
+                                <input type="checkbox" id="status">
+                                active
+                            </td>
+                            <td>
+                                <button type="button" class="btn btn-danger" data-toggle="modal"
+                                    data-target="#exampledeleteModal">
+                                    <i class="fas fa-trash"></i>
+                                </button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>ahmed alaa elsayed</td>
+                            <td>computer science</td>
+                            <td>
+                                <label for="status"></label>
+                                <input type="checkbox" id="status">
+                                not active
+                            </td>
+                            <td>
+                                <button type="button" class="btn btn-danger" data-toggle="modal"
+                                    data-target="#exampledeleteModal">
+                                    <i class="fas fa-trash"></i>
+                                </button>
+                            </td>
+                        </tr>
+                    </tbody>
+                    <!-- End table body -->
+                </table>
+            </div>
+            <!-- end table -->
+        </div>
+    </div>
+    <!--------------------------- End main content --------------------------->
+
+
+    <script src="../js/jquery-3.6.1.min.js"></script>
+    <script src="../js/bootstrap.js"></script>
+</body>
+
+</html>

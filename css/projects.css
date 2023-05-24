@@ -1,0 +1,215 @@
+.projects .special-heading {
+    color: #272626;
+    font-size: 38px;
+    font-weight: 500;
+    text-transform: capitalize;
+    margin: 0 auto 15px;
+    width: fit-content;
+}
+
+.projects .special-heading span {
+    border-bottom: 5px solid #0fa4ee
+}
+
+/* start form */
+form {
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px 20px;
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+}
+
+form input {
+    outline: none;
+    margin-bottom: 30px;
+    background-color: #ffffff;
+    border: 2px solid rgb(202, 202, 202);
+    border-radius: 5px;
+    height: 50px;
+    width: 80%;
+    padding: 10px 20px;
+    margin: 20px auto;
+}
+
+form input[type="submit"] {
+    outline: none;
+    background-color: #1a83a4;
+    border-radius: 4px;
+    color: whitesmoke;
+    border: 1px solid #1a83a4;
+    width: 20%;
+    height: 50px;
+    font-size: 18px;
+    transition: 0.5s;
+    margin: 0 auto;
+}
+
+@media (max-width:767px) {
+    form input {
+        width: fit-content;
+    }
+
+    form input[type="submit"] {
+        width: fit-content;
+    }
+
+}
+
+form input[type="submit"]:hover {
+    background-color: #49bfe3;
+    cursor: pointer;
+}
+
+/* end form */
+
+/* slider */
+
+#carouselExampleIndicators ol li {
+    cursor: pointer;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+}
+
+/* end slider */
+
+/* cards */
+.projects {
+    margin-top: 150px;
+    padding: 50px 0;
+}
+
+.content-project {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.departments {
+    margin: 40px 0 90px;
+}
+
+
+
+.department .card {
+    background-color: #f6f6f6;
+    border-radius: 2px;
+    transition: 0.5s;
+    margin-bottom: 25px;
+}
+
+@media (max-width:580px) {
+    .department .card {
+        width: 80vw;
+        margin: 0 auto;
+        margin-bottom: 25px;
+    }
+}
+
+.department .card img {
+    width: 100%;
+    height: 180px;
+    border-radius: 2px;
+}
+
+.department .card .card-body {
+    padding: 30px 20px 25px 20px;
+}
+
+.department .card h3 {
+    color: #323232;
+    font-size: 19px;
+    margin: 0;
+}
+
+.department .btn {
+    outline: none;
+    border: none;
+    background: none;
+    color: #fff;
+    background: #1a83a4;
+    border-radius: 4px;
+    font-size: 16px;
+    padding: 10px 12px;
+    transition: 0.4s;
+    width: 40%;
+    margin-top: 15px;
+}
+
+.department .btn:hover {
+    background-color: #51b7d7;
+    cursor: pointer;
+    border: 1px solid #2f90ae;
+    text-decoration: none;
+}
+
+/* card */
+
+#myDIV {
+    display: none;
+    margin-top: 25px;
+}
+
+/* select box */
+
+.optionsDiv {
+    padding-bottom: 20px;
+    font-weight: bold;
+}
+
+#selectField {
+    border-radius: 5px;
+    border: 2px solid #ccc;
+    outline: none;
+    font-size: 16px;
+    height: 40px;
+    width: 200px;
+    padding: 5px;
+    color: white;
+    background-color: #1a83a4;
+}
+
+/* table */
+.responsive-table {
+    overflow-x: auto;
+}
+
+.table {
+    min-width: 1000px;
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+#HeadRow {
+    background: #1a83a4;
+    color: white;
+    font-weight: bold;
+}
+
+#myTable td {
+    padding: 5px;
+    border: 2px solid rgb(201, 201, 201);
+    text-align: center;
+}
+
+#myTable a {
+    outline: none;
+    border: none;
+    background: none;
+    color: rgb(37, 36, 36);
+    border-radius: 4px;
+    font-size: 17px;
+    transition: 0.4s;
+    font-weight: bold
+}
+
+#myTable a:hover {
+    background-color: #1a83a4;
+    color: white;
+    padding: 5px;
+    cursor: pointer;
+    border: 1px solid #1a83a4;
+    text-decoration: none;
+}

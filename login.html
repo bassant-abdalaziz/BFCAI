@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <!-- Files Of Css -->
+  <link rel="stylesheet" href="css/login.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="shortcut icon" href="images/logo.png">
+</head>
+
+<body>
+  <!-- login form -->
+  <div class="container">
+    <div class="login-content">
+      <form action="">
+        <h2 class="title">Welcome</h2>
+
+        <div class="input-div one">
+          <div class="i">
+            <i class="fas fa-user"></i>
+          </div>
+          <div class="div">
+            <h5>Email</h5>
+            <input type="email" class="input" required>
+          </div>
+        </div>
+
+        <div class="input-div pass">
+          <div class="i">
+            <i class="fas fa-lock"></i>
+          </div>
+          <div class="div">
+            <h5>Password</h5>
+            <input type="password" class="input" required>
+          </div>
+        </div>
+
+        <a href="forget-password.html" target="_blank">Forgot Password?</a>
+
+        <input type="submit" class="btn" value="Login">
+      </form>
+
+      <div class="image">
+        <img src="images/staff.png" alt="login-staff">
+      </div>
+    </div>
+  </div>
+  <!-- End login form -->
+
+  <!-- js login -->
+  <script>
+    const inputs = document.querySelectorAll(".input");
+
+
+    function addcl() {
+      let parent = this.parentNode.parentNode;
+      parent.classList.add("focus");
+    }
+
+    function remcl() {
+      let parent = this.parentNode.parentNode;
+      if (this.value == "") {
+        parent.classList.remove("focus");
+      }
+    }
+
+
+    inputs.forEach(input => {
+      input.addEventListener("focus", addcl);
+      input.addEventListener("blur", remcl);
+    });
+  </script>
+  <!-- end js login -->
+</body>
+
+</html>

@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student || Dashboard</title>
+    <!-- Files Of Css -->
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/all.min.css">
+    <link rel="stylesheet" href="../css/studentDashboard.css">
+    <link rel="shortcut icon" href="../images/logo.png">
+</head>
+
+<body>
+    <!-- Start header -->
+    <header>
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light ">
+                <a class="navbar-brand" href="../home.html"><img src="../images/logo.png" alt=""></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class=" ml-auto">
+                        <li class="nav-item ">
+                            <a class="nav-link" href="../home.html" target="_blank">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../projects.html" target="_blank">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../departments.html" target="_blank">Departments</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../news.html" target="_blank">News</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../contact_us.html" target="_blank">Contact Us</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-chalkboard-teacher" style="font-size: 28px"></i>
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">ali123@fci.bu.edu.eg</a>
+                                <a class="dropdown-item" href="add-member.html">add member</a>
+                                <a class="dropdown-item" href="#">log out</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- End header -->
+
+    <!-- Atart Add Members section -->
+    <div class="member">
+        <div class="container">
+            <!-- Start modals -->
+            <!-- start add form Modal -->
+            <div class="modal fade" id="exampleformModal" tabindex="-1" role="dialog"
+                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Add Member</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <!-- Start Form -->
+                            <form>
+                                <div class="form-group">
+                                    <label for="name" class="col-form-label">Member Name</label>
+                                    <input type="text" class="form-control" id="name">
+                                </div>
+
+                                <div class="form-group ">
+                                    <label for="image">Upload Image</label>
+                                    <input type="file" class="form-control-file" id="image">
+                                </div>
+                            </form>
+                            <!-- End Form -->
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Add</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end add form modal -->
+
+
+            <!-- start delete form Modal -->
+            <div class="modal fade" id="exampledeleteModal" tabindex="-1" role="dialog"
+                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Delete Member</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Delete</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end delete form Modal -->
+
+            <!-- end Modals -->
+
+            <!-- Start add button Modal -->
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleformModal">
+                Add Member
+            </button>
+            <!-- End add button Modal -->
+
+            <!-- Start Table -->
+            <div class="responsive-table">
+                <table class="table">
+                    <!-- Start table head -->
+                    <thead>
+                        <tr>
+                            <th>team number</th>
+                            <th>department</th>
+                            <th>member name</th>
+                            <th>image</th>
+                            <th>action</th>
+                        </tr>
+                    </thead>
+                    <!-- End table head -->
+
+                    <!-- Start table body -->
+                    <tbody>
+                        <!-- Start tr of table -->
+                        <tr>
+                            <td rowspan="6">10</td>
+                            <td rowspan="6">medical informatics</td>
+                            <td>bassant abdalaziz elsayed</td>
+                            <td><img src="../images/student.png" alt=""></td>
+                            <td>
+                                <button type="button" class="btn btn-danger" data-toggle="modal"
+                                    data-target="#exampledeleteModal">
+                                    <i class="fas fa-trash"></i>
+                                </button>
+                            </td>
+                        </tr>
+                        <!-- End tr of table -->
+
+                        <tr>
+                            <td>bassant abdalaziz elsayed</td>
+                            <td><img src="../images/student.png" alt=""></td>
+                            <td>
+                                <button type="button" class="btn btn-danger" data-toggle="modal"
+                                    data-target="#exampledeleteModal">
+                                    <i class="fas fa-trash"></i>
+                                </button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>bassant abdalaziz elsayed</td>
+                            <td><img src="../images/student.png" alt=""></td>
+                            <td>
+                                <button type="button" class="btn btn-danger" data-toggle="modal"
+                                    data-target="#exampledeleteModal">
+                                    <i class="fas fa-trash"></i>
+                                </button>
+                            </td>
+                        </tr>
+
+
+                        <tr>
+                            <td>bassant abdalaziz elsayed</td>
+                            <td><img src="../images/student.png" alt=""></td>
+                            <td>
+                                <button type="button" class="btn btn-danger" data-toggle="modal"
+                                    data-target="#exampledeleteModal">
+                                    <i class="fas fa-trash"></i>
+                                </button>
+                            </td>
+                        </tr>
+
+
+                        <tr>
+                            <td>bassant abdalaziz elsayed</td>
+                            <td><img src="../images/student.png" alt=""></td>
+                            <td>
+                                <button type="button" class="btn btn-danger" data-toggle="modal"
+                                    data-target="#exampledeleteModal">
+                                    <i class="fas fa-trash"></i>
+                                </button>
+                            </td>
+                        </tr>
+
+
+                        <tr>
+                            <td>bassant abdalaziz elsayed</td>
+                            <td><img src="../images/student.png" alt=""></td>
+                            <td>
+                                <button type="button" class="btn btn-danger" data-toggle="modal"
+                                    data-target="#exampledeleteModal">
+                                    <i class="fas fa-trash"></i>
+                                </button>
+                            </td>
+                        </tr>
+
+                    </tbody>
+                    <!-- End table body -->
+                </table>
+            </div>
+            <!-- end table -->
+        </div>
+    </div>
+    <!-- End Add Members Section -->
+
+    <!-- Scroll -->
+    <span class="up"><i class="fas fa-arrow-circle-up"></i></span>
+    <!--end scroll -->
+
+    <!-- Start footer -->
+    <footer>
+        <div class="container">
+            <div class="social">
+                <h6 class="logo">BFCAI</h6>
+                <a href="https://www.facebook.com/Official.BFCAI" target="_blank">
+                    <i class="fab fa-facebook-square "></i></a>
+                <a href="https://www.youtube.com/channel/UCuyfY61mUyWK30ybXKqzJ3g" target="_blank"> <i
+                        class="fab fa-youtube "></i></a>
+                <a href="https://twitter.com/bfciitunit" target="_blank"> <i class="fab fa-twitter "></i></a>
+            </div>
+            <div class="contact">
+                <h6>Contact Us</h6>
+                <p><i class="fas fa-map-marker-alt"></i>New Benha - Benha - Qalyubia</p>
+                <p><i class="fas fa-envelope"></i> 13518</p>
+                <p><i class="fas fa-phone-alt"></i> 013-3229371</p>
+            </div>
+            <div class="links">
+                <h6>Links</h6>
+                <a href="https://bu.edu.eg/en//" target="_blank">Benha University</a>
+                <a href="https://www.ekb.eg/" target="_blank">Egyptian Knowledge Bank</a>
+            </div>
+        </div>
+        <div class="end-footer">
+            <p>© All rights reserved to Bfcai 2022</p>
+        </div>
+    </footer>
+    <!-- End  footer -->
+    <!-- Files Of Js -->
+    <script src="../js/index.js"></script>
+    <script src="../js/jquery-3.6.1.min.js"></script>
+    <script src="../js/bootstrap.js"></script>
+</body>
+
+</html>

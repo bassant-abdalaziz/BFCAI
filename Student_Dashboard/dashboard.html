@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student || Dashboard</title>
+    <!-- Files Of Css -->
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/all.min.css">
+    <link rel="stylesheet" href="../css/studentDashboard.css">
+    <link rel="shortcut icon" href="../images/logo.png">
+</head>
+
+<body>
+    <!-- Start header -->
+    <header>
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light ">
+                <a class="navbar-brand" href="../home.html"><img src="../images/logo.png" alt=""></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class=" ml-auto">
+                        <li class="nav-item ">
+                            <a class="nav-link" href="../home.html" target="_blank">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../projects.html" target="_blank">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../departments.html" target="_blank">Departments</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../news.html" target="_blank">News</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../contact_us.html" target="_blank">Contact Us</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-chalkboard-teacher" style="font-size: 28px"></i>
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">ali123@fci.bu.edu.eg</a>
+                                <a class="dropdown-item" href="add-member.html">add member</a>
+                                <a class="dropdown-item" href="#">log out</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- End header -->
+    <!-- Start Content -->
+    <div class="container">
+        <!-- Start card -->
+        <div class="card">
+            <div class="card-body">
+                <h4>my project</h4>
+                <h5 class="card-title">project name</h5>
+                <p class="card-text"> <a href="../project_details.html" target="_blank">skin cancer detection
+                        using deep learning</a>
+                </p>
+            </div>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">team number : <span>3</span></li>
+                <li class="list-group-item">doctor : <span>elsayed bader</span><br>
+                    <a href="#" class="card-link">elsayed187040@fci.bu.edu.eg</a>
+                </li>
+                <li class="list-group-item">assistant : <span>ibrehaem rayed</span><br>
+                    <a href="#" class="card-link">ibrehaem187040@fci.bu.edu.eg</a>
+                </li>
+            </ul>
+        </div>
+        <!-- End card -->
+    </div>
+    <!-- End Content -->
+
+    <!-- Start form and table -->
+    <div class="container">
+        <div class="row">
+
+            <!-- Start form -->
+            <div class=" col-xs-12 col-md-6">
+                <form class="form">
+                    <div class="form-row">
+                        <div class="form-group col-md-12">
+                            <label for="inputEmail4">Email</label>
+                            <input type="email" class="form-control" id="inputEmail4" placeholder="Enter Your Email"
+                                required>
+                        </div>
+
+                        <div class="form-group col-md-12">
+                            <label for="inputDate">Date</label>
+                            <input type="date" class="form-control" id="inputDate" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputMessage">Message</label>
+                        <textarea class="form-control" id="inputMessage" placeholder="Enter Your Message"></textarea>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-8">
+                            <label for="inputState">File Type</label>
+                            <select id="inputState" class="form-control">
+                                <option selected>Choose...</option>
+                                <option>proposal</option>
+                                <option>poster</option>
+                                <option>presentation</option>
+                                <option>finel documentation</option>
+                                <option>code</option>
+                                <option>other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group ">
+                            <label for="exampleFormControlFile1">Select File</label>
+                            <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-dark">Send</button>
+                </form>
+            </div>
+            <!-- End form -->
+
+            <!-- Start table -->
+            <div class=" col-xs-12 col-md-6">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Doctors Reply</th>
+                            <th scope="col">Date</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>السلام عليكم كنت عايزة البرزنيشن تترفع</td>
+                            <td>8/4/2022</td>
+                        </tr>
+
+                        <tr>
+                            <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam a neque voluptatibus
+                                et eveniet quam, nobis eos ex possimus cum, optio at doloremqu</td>
+                            <td>8/4/2022</td>
+                        </tr>
+
+                        <tr>
+                            <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam a neque voluptatibus
+                                et eveniet quam, nobis eos ex possimus cum, optio at doloremqu</td>
+                            <td>8/4/2022</td>
+                        </tr>
+
+                        <tr>
+                            <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam a neque voluptatibus
+                                et eveniet quam, nobis eos ex possimus cum, optio at doloremqu</td>
+                            <td>8/4/2022</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- End table -->
+        </div>
+    </div>
+    <!-- End form and table -->
+
+    <!-- Scroll -->
+    <span class="up"><i class="fas fa-arrow-circle-up"></i></span>
+    <!-- Start footer -->
+    <footer>
+        <div class="container">
+            <div class="social">
+                <h6 class="logo">BFCAI</h6>
+                <a href="https://www.facebook.com/Official.BFCAI" target="_blank">
+                    <i class="fab fa-facebook-square "></i></a>
+                <a href="https://www.youtube.com/channel/UCuyfY61mUyWK30ybXKqzJ3g" target="_blank"> <i
+                        class="fab fa-youtube "></i></a>
+                <a href="https://twitter.com/bfciitunit" target="_blank"> <i class="fab fa-twitter "></i></a>
+            </div>
+            <div class="contact">
+                <h6>Contact Us</h6>
+                <p><i class="fas fa-map-marker-alt"></i>New Benha - Benha - Qalyubia</p>
+                <p><i class="fas fa-envelope"></i> 13518</p>
+                <p><i class="fas fa-phone-alt"></i> 013-3229371</p>
+            </div>
+            <div class="links">
+                <h6>Links</h6>
+                <a href="https://bu.edu.eg/en//" target="_blank">Benha University</a>
+                <a href="https://www.ekb.eg/" target="_blank">Egyptian Knowledge Bank</a>
+            </div>
+        </div>
+        <div class="end-footer">
+            <p>© All rights reserved to Bfcai 2022</p>
+        </div>
+    </footer>
+    <!-- End  footer -->
+    <!-- Files Of Js -->
+    <script src="../js/index.js"></script>
+    <script src="../js/jquery-3.6.1.min.js"></script>
+    <script src="../js/bootstrap.js"></script>
+</body>
+
+</html>
